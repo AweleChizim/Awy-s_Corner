@@ -1,0 +1,21 @@
+@import "tailwindcss";
+
+@theme {
+  --color-awy-light: #D7BDA6;
+  --color-awy-sand: #B8957F;
+  --color-awy-caramel: #AB7843;
+  --color-awy-mocha: #6D3914;
+  --color-awy-espresso: #4C2B08;
+  
+  --font-seasons: var(--font-seasons), serif;
+  --font-tanpearl: var(--font-tanpearl), sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
