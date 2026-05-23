@@ -2,6 +2,8 @@
 import { client } from '@/sanity/lib/client'
 import Link from 'next/link'
 
+export const revalidate = 0;
+
 export default async function Home() {
   const posts = await client.fetch(`*[_type == "post"] | order(publishedAt desc) {
     _id, title, slug, "imageUrl": mainImage.asset->url
