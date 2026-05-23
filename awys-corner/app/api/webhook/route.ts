@@ -16,10 +16,10 @@ export async function POST(request: Request) {
     
     for (const email of emails) {
       await resend.emails.send({
-        from: 'Awele <hello@awyscorner.com>',
+        from: 'Awele <onboarding@resend.com>',
         to: email,
         subject: `New on Awy's Corner: ${body.title}`,
-        html: `<p>A new piece is up. Read it here: https://awyscorner.com/writings/${body.slug.current}</p>`
+        html: `<p>Hey there. I just published a new work. You can read it here: https://awyscorner.com/writings/${body.slug.current}</p>`
       })
     }
     return NextResponse.json({ message: 'Emails sent successfully' })
